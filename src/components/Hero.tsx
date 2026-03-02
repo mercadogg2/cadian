@@ -39,10 +39,10 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.a
-                href="#bottom"
+                href="#form-notice"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                  document.getElementById('form-notice')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px rgba(255, 140, 0, 0.4), 0 8px 10px -6px rgba(255, 140, 0, 0.1)" }}
                 whileTap={{ scale: 0.95 }}

@@ -105,7 +105,7 @@ export default function ComparisonTable() {
                     <div className="text-sm font-bold text-cadian-red/70 uppercase tracking-wider">Única vez</div>
                   </td>
                   <td className="p-8 bg-gray-50 border-t-2 border-gray-100">
-                    <div className="font-bold text-2xl text-gray-400 mb-1">R$ 4.500</div>
+                    <div className="font-bold text-2xl text-gray-400 mb-1">R$ 8.005</div>
                     <div className="text-sm font-medium text-gray-400 uppercase tracking-wider">Todo santo ano</div>
                   </td>
                 </tr>
@@ -115,10 +115,10 @@ export default function ComparisonTable() {
           
           <div className="mt-12 text-center">
             <motion.a
-              href="#bottom"
+              href="#form-notice"
               onClick={(e) => {
                 e.preventDefault();
-                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                document.getElementById('form-notice')?.scrollIntoView({ behavior: 'smooth' });
               }}
               whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px rgba(255, 140, 0, 0.4), 0 8px 10px -6px rgba(255, 140, 0, 0.1)" }}
               whileTap={{ scale: 0.95 }}

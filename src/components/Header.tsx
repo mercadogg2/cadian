@@ -53,10 +53,10 @@ export default function Header() {
           </a>
           
           <motion.a
-            href="#bottom"
+            href="#form-notice"
             onClick={(e) => {
               e.preventDefault();
-              window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+              document.getElementById('form-notice')?.scrollIntoView({ behavior: 'smooth' });
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -91,11 +91,11 @@ export default function Header() {
           <a href="#tecnologia" onClick={() => setIsMobileMenuOpen(false)} className="font-bold text-gray-800 p-2 border-b border-gray-100">Tecnologia</a>
           <a href="#clientes" onClick={() => setIsMobileMenuOpen(false)} className="font-bold text-gray-800 p-2 border-b border-gray-100">Clientes</a>
           <a 
-            href="#bottom" 
+            href="#form-notice" 
             onClick={(e) => {
               e.preventDefault();
               setIsMobileMenuOpen(false);
-              window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+              document.getElementById('form-notice')?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="bg-cadian-orange text-white text-center font-bold py-3 rounded-lg mt-2"
           >

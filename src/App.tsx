@@ -9,6 +9,7 @@ import FinancialGraph from './components/FinancialGraph';
 import ComparisonTable from './components/ComparisonTable';
 import PlugAndPlay from './components/PlugAndPlay';
 import SocialProof from './components/SocialProof';
+import FormNotice from './components/FormNotice';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <ComparisonTable />
         <PlugAndPlay />
         <SocialProof />
+        <FormNotice />
       </main>
     </div>
   );
