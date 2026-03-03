@@ -39,17 +39,11 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#economia" className={`font-semibold text-sm uppercase tracking-wider hover:text-cadian-orange transition-colors ${isScrolled ? 'text-gray-600' : 'text-gray-300'}`}>
-            Economia
-          </a>
           <a href="#comparativo" className={`font-semibold text-sm uppercase tracking-wider hover:text-cadian-orange transition-colors ${isScrolled ? 'text-gray-600' : 'text-gray-300'}`}>
             Comparativo
           </a>
           <a href="#tecnologia" className={`font-semibold text-sm uppercase tracking-wider hover:text-cadian-orange transition-colors ${isScrolled ? 'text-gray-600' : 'text-gray-300'}`}>
             Tecnologia
-          </a>
-          <a href="#clientes" className={`font-semibold text-sm uppercase tracking-wider hover:text-cadian-orange transition-colors ${isScrolled ? 'text-gray-600' : 'text-gray-300'}`}>
-            Clientes
           </a>
           
           <motion.a
@@ -86,10 +80,8 @@ export default function Header() {
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-xl border-t border-gray-100 p-4 flex flex-col gap-4">
-          <a href="#economia" onClick={() => setIsMobileMenuOpen(false)} className="font-bold text-gray-800 p-2 border-b border-gray-100">Economia</a>
           <a href="#comparativo" onClick={() => setIsMobileMenuOpen(false)} className="font-bold text-gray-800 p-2 border-b border-gray-100">Comparativo</a>
           <a href="#tecnologia" onClick={() => setIsMobileMenuOpen(false)} className="font-bold text-gray-800 p-2 border-b border-gray-100">Tecnologia</a>
-          <a href="#clientes" onClick={() => setIsMobileMenuOpen(false)} className="font-bold text-gray-800 p-2 border-b border-gray-100">Clientes</a>
           <a 
             href="#form-notice" 
             onClick={(e) => {

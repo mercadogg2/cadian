@@ -98,17 +98,6 @@ export default function ComparisonTable() {
                     </div>
                   </td>
                 </tr>
-                <tr className="group">
-                  <td className="p-8 pl-8 font-black text-gray-900 text-lg border-t-2 border-gray-100">Custo Total</td>
-                  <td className="p-8 bg-red-50 border-t-2 border-cadian-red">
-                    <div className="font-black text-4xl text-cadian-red mb-1">R$ 2.500</div>
-                    <div className="text-sm font-bold text-cadian-red/70 uppercase tracking-wider">Única vez</div>
-                  </td>
-                  <td className="p-8 bg-gray-50 border-t-2 border-gray-100">
-                    <div className="font-bold text-2xl text-gray-400 mb-1">R$ 8.005</div>
-                    <div className="text-sm font-medium text-gray-400 uppercase tracking-wider">Todo santo ano</div>
-                  </td>
-                </tr>
               </tbody>
             </table>
           </div>
